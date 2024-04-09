@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="./css/styles.css">
+    <style>
+        .navbar {
+          overflow: hidden;
+          background-color: #333;
+          font-family: Arial, Helvetica, sans-serif;
+        }
+        
+        .navbar a {
+          float: left;
+          font-size: 16px;
+          color: white;
+          text-align: center;
+          padding: 14px 16px;
+          text-decoration: none;
+        }
+        
+        .dropdown {
+          float: left;
+          overflow: hidden;
+        }
+        
+        .dropdown .dropbtn {
+          cursor: pointer;
+          font-size: 16px;  
+          border: none;
+          outline: none;
+          color: white;
+          padding: 14px 16px;
+          background-color: inherit;
+          font-family: inherit;
+          margin: 0;
+        }
+        
+        .navbar a:hover, .dropdown:hover .dropbtn, .dropbtn:focus {
+          background-color: lightgray;
+        }
+        
+        .dropdown-content {
+          display: none;
+          position: absolute;
+          background-color: #f9f9f9;
+          min-width: 160px;
+          box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+          z-index: 1;
+        }
+        
+        .dropdown-content a {
+          float: none;
+          color: black;
+          padding: 12px 16px;
+          text-decoration: none;
+          display: block;
+          text-align: left;
+        }
+        
+        .dropdown-content a:hover {
+          background-color: bisque;
+        }
+        
+        .show {
+          display: block;
+        }
+
+        #mainFrame{
+                box-sizing: border-box;
+                background:rgb(32, 32, 32);
+                border-radius: 10px;
+                border: 3px solid bisque;
+                border-image: linear-gradient(bisque, #1a1917) 30;
+                padding: 10px;
+                margin: 15px;
+                height: calc(100vh - 40px);
+                overflow-y: scroll;
+        }
+  
+</style>
+           <h1>Xycuro</h1>
+</head>
+
+    <body style="background-color:rgb(17, 17, 17);">
+      <div id="mainFrame">
+        <div class="navbar">
+          <a href="http://127.0.0.1:5501/index.html#home">Home</a>
+          <div class="dropdown">
+          <button class="dropbtn" onclick="myFunction()">Index
+            <i class="fa fa-caret-down"></i>
+          </button>
+          <div class="dropdown-content" id="myDropdown">
+            <a href="http://127.0.0.1:5501/commissions.html">Commissions</a>
+            <a href="http://127.0.0.1:5501/gallery.html">Gallery</a>
+            <a href="http://127.0.0.1:5501/contact.html">Contact</a>
+          </div>
+          </div> 
+        </div>
+        <img 
+          src="./images/icon.jpg"
+          class="profile-image"
+          alt="profile-picture"
+          class="center">
+        <h4>2D Digital Artist || Freelance Character and Concept Artist.</h4>
+        
+        <div>
+        <div>
+          <h5><u>About Me</u></h5>
+          <p>I'm a 2D freelance artist with experience in character design</p>
+            <p>and concept art with some experience in 3D media.</p>
+            <p>I'm always open for work and currently have commissions open.</p>
+            <p>Check the index for more.</p>
+
+          <section class="profile bg-dark">
+            <h5><u>Programs</u></h5>
+            <p class="profile-description">
+              <li>Adobe Photoshop</li>
+              <li>Clip Studio Paint</li>
+              <li>Blender</li>
+              <li>Adobe Premiere Pro</li>
+              <li>Adobe After Effects</li>
+              <li>Virtual Studio Code</li>
+              <li>Adobe Photoshop</li>
+              <li>Clip Studio Paint</li>
+              <li>Blender</li>
+              <li>Adobe Premiere Pro</li>
+              <li>Adobe After Effects</li>
+              <li>Virtual Studio Code</li></p>
+          
+          <h5><u>Software Languages</u></h5>
+          <li>HTML</li>
+          <li>CSS</li>
+          <li>Bootstrap</li>
+          <li>Git</li>
+        </div>
+      </section>
+        </div>
+
+        
+        <div>
+         <p><img src="./images/LinkedIn_logo_initials-86208477.png" height="80" width="80">
+          <a href="https://www.linkedin.com/in/isabella-vivas-77b695222/">LinkedIn</a> || <a href="https://www.artstation.com/xycuro">Artstation</a> <img src="./images/artstation.png" height="80" width="80"> </p>
+        </div>
+        
+
+        <script>
+        function myFunction() {
+          document.getElementById("myDropdown").classList.toggle("show");
+        }
+        
+        window.onclick = function(e) {
+          if (!e.target.matches('.dropbtn')) {
+          var myDropdown = document.getElementById("myDropdown");
+            if (myDropdown.classList.contains('show')) {
+              myDropdown.classList.remove('show');
+            }
+          }
+        }
+        </script>
+        </body>
+<header>
+</header>
+
+
+    </div>
+  </div>
+</div> 
+
+
+
+</div>
+</body>
+</html>

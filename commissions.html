@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<title>Commissions</title>
+<link rel="stylesheet" href="./css/teststyles.css">
+<link rel="stylesheet" href="./css/styles.css">
+<h1>Commissions</h1>
+<style>
+    .navbar {
+      overflow: hidden;
+      background-color: #333;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+    
+    .navbar a {
+      float: left;
+      font-size: 16px;
+      color: white;
+      text-align: center;
+      padding: 14px 16px;
+      text-decoration: none;
+    }
+    
+    .dropdown {
+      float: left;
+      overflow: hidden;
+    }
+    
+    .dropdown .dropbtn {
+      cursor: pointer;
+      font-size: 16px;  
+      border: none;
+      outline: none;
+      color: white;
+      padding: 14px 16px;
+      background-color: inherit;
+      font-family: inherit;
+      margin: 0;
+    }
+    
+    .navbar a:hover, .dropdown:hover .dropbtn, .dropbtn:focus {
+      background-color: lightgray;
+    }
+    
+    .dropdown-content {
+      display: none;
+      position: absolute;
+      background-color: #f9f9f9;
+      min-width: 160px;
+      box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+      z-index: 1;
+    }
+    
+    .dropdown-content a {
+      float: none;
+      color: black;
+      padding: 12px 16px;
+      text-decoration: none;
+      display: block;
+      text-align: left;
+    }
+    
+    .dropdown-content a:hover {
+      background-color: bisque;
+    }
+    
+    .show {
+      display: block;
+    }
+    </style>
+
+<body style="background-color:rgb(17, 17, 17);">
+  <div id="mainFrame">
+
+    <div class="navbar">
+      <a href="http://127.0.0.1:5501/index.html#home">Home</a>
+      <div class="dropdown">
+      <button class="dropbtn" onclick="myFunction()">Index
+        <i class="fa fa-caret-down"></i>
+      </button>
+      <div class="dropdown-content" id="myDropdown">
+        <a href="http://127.0.0.1:5501/commissions.html">Commissions</a>
+        <a href="http://127.0.0.1:5501/gallery.html">Gallery</a>
+        <a href="http://127.0.0.1:5501/contact.html">Contact</a>
+      </div>
+      </div> 
+    </div>
+    
+    <script>
+    function myFunction() {
+      document.getElementById("myDropdown").classList.toggle("show");
+    }
+    
+    window.onclick = function(e) {
+      if (!e.target.matches('.dropbtn')) {
+      var myDropdown = document.getElementById("myDropdown");
+        if (myDropdown.classList.contains('show')) {
+          myDropdown.classList.remove('show');
+        }
+      }
+    }
+    </script>
+
+
+    <section id="skills" class="bg-light">
+      <div class="shield">
+    <div class="multi-column-container">
+      <section class="three-column-item">
+        <img src="./images/artpreview.png" width="500" height="1220">
+      </section>
+
+      <section id="skills" class="bg-light">
+        <h2><u>Prices</u></h2>
+      <div class="shield">
+    <div class="multi-column-container">
+      <section class="three-column-item">
+        <h3><u>Bust/Portrait</u></h3>
+        <caption>
+          Flat Colors: $10
+          Minimal Shading: $13
+          <div>Full Shading/Lighting: $15</div>
+        </caption>
+      </section>
+      <section class="three-column-item">
+        <h3><u>Half Body</u></h3>
+        <caption>
+          Flat Colors: $15
+          Minimal Shading: $18
+          <div>Full Shading/Lighting: $20</div>
+        </caption>
+      </section>
+      <section class="three-column-item">
+        <h3><u>Full Body</u></h3>
+        <caption>
+          Flat Colors: $20
+          Minimal Shading: $23
+          <div>Full Shading/Lighting: $25</div>
+        </caption>
+        <p></p>
+      </section>
+      </div>
+    </div>
+
+    <section id="skill" class="bg-light">
+      <div class="shield">
+      <div class="multi-column-container">
+          <section class="three-column-item">
+            <h3><u>Expression Sheets</u></h3>
+            <caption>
+              <div>6 Expressions: $12</div>
+              <div>9 expressions: $15</div>
+            </caption>
+          </section>
+          <section class="three-column-item">
+              <h3><u>Movement Sheets</u></h3>
+              <caption>
+                <div>6 poses: $18</div>
+                <div>(With color: $20 in total)</div>
+              </caption>
+          </section>
+          <section class="three-column-item">
+              <h3><u>Turn-Arounds</u></h3>
+              <caption>
+                <div>4 poses: $60</div>
+                <div>6 poses: $80</div>
+              </caption>
+              <p></p>
+          </section>
+      </div>
+</div>
+<div></div>
+    <h2><u>Terms of Service</u></h2>
+    <p>I have the right to decline a commission and can choose to explain or not and will do refunds if I am unable to complete the task if something comes up.</p>
+      <p>If you decide to commission your oc, your oc must have a complete character ref for me to work with depending on what commission type you are looking for. For example, if you want a full body commission, I need a full body reference. I will NOT make your character for you with other references.</p>
+      
+      <p><strong>HOWEVER;</strong> <i>custom character commissions do not need references if starting from scratch. Some references would help, but it is not necessary.</i></p>
+      
+      <p>This is payment first; I will not start on the commission if I do not receive payment first.</p>
+      
+      <p>You are not allowed to use the commission for NFT or AI Art purposes.
+      
+      </p>
+  </div>
+    </body>
+
+
+
+
+</html>
